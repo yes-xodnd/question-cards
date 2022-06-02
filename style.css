@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body {
+  margin: 0;
+  background-color: rgb(35, 44, 60);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(17, 17, 21);
+}
+
+#app header {
+  padding: 30px;
+}
+
+#app header h1 {
+  margin: 0;
+  font-weight: 900;
+}
+
+#app header p {
+  color: grey;
+}
+
+.content-area {
+  display: flex;
+  flex-grow: 2;
+  padding: 0 30px 50px;
+}
+
+.knock-button {
+  padding: 15px;
+  border: none;
+  background-color: #2666dd;
+  
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px lightgrey;
+  overflow: scroll;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+
+  border-radius: 100%;
+  background-color: #2666dd;
+  color: white;
+  overflow: hidden;
+}
+
+.card-content {
+  word-break: keep-all;
+  font-size: 35px;
+}
+
+.disabled {
+  background-color: lightgrey;
+}
+
+.random-number {
+  font-size: 30px;
+}
