@@ -14,7 +14,6 @@ body {
   max-width: 600px;
   min-height: 100vh;
   background-color: white;
-  box-shadow: 0 0 10px rgb(17, 17, 21);
 }
 
 @media screen and (min-width: 600px) {
@@ -38,17 +37,25 @@ body {
 
 .content-area {
   display: flex;
-  flex-grow: 2;
+  height: calc(100vh - 250px);
   padding: 0 30px 50px;
 }
 
 .knock-button {
-  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 70px;
   border: none;
   background-color: #2666dd;
   
   color: white;
-  text-align: center;
   font-weight: 500;
   font-size: 1.3rem;
 }
